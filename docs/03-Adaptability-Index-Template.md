@@ -11,6 +11,7 @@ real teammates to use, matching the grading map's criteria.
 ---
 
 **Reviewer:** ___________Marrion Branham___________
+
 **Sprint:** Northstar Retail Co., Sprint 2
 
 Rate 1 (needs work) – 5 (excellent) on each, with one specific example from
