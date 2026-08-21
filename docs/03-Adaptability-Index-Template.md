@@ -1,4 +1,4 @@
-# Assignment 3 — Individual Adaptability Index (Template)
+ Individual Adaptability Index (Template)
 
 **A note on this file:** this assignment is a confidential *peer* review —
 one real teammate rating another on how they personally behaved during the
@@ -10,8 +10,7 @@ real teammates to use, matching the grading map's criteria.
 
 ---
 
-**Reviewer:** ______________________
-**Teammate being reviewed:** ______________________
+**Reviewer:** ___________Marrion Branham___________
 **Sprint:** Northstar Retail Co., Sprint 2
 
 Rate 1 (needs work) – 5 (excellent) on each, with one specific example from
@@ -33,5 +32,4 @@ pivot:**
 
 ---
 *Per the non-negotiable rules, completed copies of this form are
-confidential and should not be shared verbatim between teammates — only
-aggregate patterns get released back to the group.*
+confidential.
