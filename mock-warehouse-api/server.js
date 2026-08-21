@@ -16,8 +16,10 @@ const crypto = require('crypto');
 const app = express();
 app.use(express.json());
 
-const PORT = 4000;
-const WEBHOOK_SECRET = 'northstar-shared-secret-v1'; // shared out-of-band with subscriber
+const PORT = process.env.PORT || 4000;
+
+const WEBHOOK_SECRET =
+  process.env.WEBHOOK_SECRET || 'northstar-shared-secret-v1'; // shared out-of-band with subscriber
 
 let stock = {
   'SKU-1001': 42,
@@ -83,4 +85,8 @@ app.post('/warehouse/admin/adjust', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`[warehouse] mock warehouse API listening on :${PORT}`));
+app.listen(PORT, '0.0.0.0', () =>
+  console.log(
+    `[warehouse] mock warehouse API listening on :${PORT}`
+  )
+);
