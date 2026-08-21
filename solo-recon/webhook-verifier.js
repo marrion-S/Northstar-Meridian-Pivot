@@ -14,8 +14,10 @@
 const express = require('express');
 const crypto = require('crypto');
 
-const PORT = 4100;
-const SHARED_SECRET = 'northstar-shared-secret-v1';
+const PORT = process.env.PORT || 4100;
+
+const SHARED_SECRET =
+  process.env.WEBHOOK_SECRET || 'northstar-shared-secret-v1';
 
 const app = express();
 
@@ -53,6 +55,10 @@ app.post('/webhook-test', (req, res) => {
   res.status(200).json({ received: true });
 });
 
-app.listen(PORT, () => console.log(`[solo-recon] webhook-verifier listening on :${PORT}`));
+app.listen(PORT, '0.0.0.0', () =>
+  console.log(
+    `[solo-recon] webhook-verifier listening on :${PORT}`
+  )
+);
 
 module.exports = { isValidSignature };
