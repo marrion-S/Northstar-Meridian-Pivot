@@ -1,4 +1,4 @@
-# Day 4 — Client Pivot Notice
+# Client Pivot Notice
 
 **From:** Northstar Retail Co.
 **Re:** Inventory sync integration — change of method
