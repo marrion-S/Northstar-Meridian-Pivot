@@ -69,7 +69,7 @@ async function seedInitialCache() {
   }
 }
 
-aapp.listen(PORT, '0.0.0.0', async () => {
+app.listen(PORT, '0.0.0.0', async () => {
   console.log(`[inventory-sync] listening on :${PORT}`);
   await seedInitialCache();
   await registerWithWarehouse();
