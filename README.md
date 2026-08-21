@@ -41,3 +41,4 @@ curl http://localhost:4200/stock/SKU-1001                                       
   with no polling delay.
 - `GET /stock/:sku` response shape confirmed identical before and after the
   pivot (see Scope Delta Analysis, "Regression check").
+  https://northstar-meridian-warehouse.onrender.com/warehouse/stock
