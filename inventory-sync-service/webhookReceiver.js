@@ -11,7 +11,8 @@ const express = require('express');
 const crypto = require('crypto');
 const cache = require('./cache');
 
-const SHARED_SECRET = 'northstar-shared-secret-v1';
+const SHARED_SECRET =
+  process.env.WEBHOOK_SECRET || 'northstar-shared-secret-v1';
 
 const router = express.Router();
 
