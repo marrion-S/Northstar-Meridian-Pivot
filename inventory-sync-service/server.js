@@ -41,7 +41,7 @@ app.get('/stock', (req, res) => {
 });
 
 async function registerWithWarehouse() {
-  const webhookUrl = `http://localhost:${PORT}/webhooks/stock-update`;
+  const webhookUrl = WEBHOOK_PUBLIC_URL;
   try {
     const resp = await fetch(`${WAREHOUSE_BASE}/warehouse/register-webhook`, {
       method: 'POST',
@@ -69,7 +69,7 @@ async function seedInitialCache() {
   }
 }
 
-app.listen(PORT, async () => {
+aapp.listen(PORT, '0.0.0.0', async () => {
   console.log(`[inventory-sync] listening on :${PORT}`);
   await seedInitialCache();
   await registerWithWarehouse();
