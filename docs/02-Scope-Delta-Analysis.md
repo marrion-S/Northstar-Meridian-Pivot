@@ -1,4 +1,4 @@
-# Assignment 2 — Scope Delta Analysis
+ Scope Delta Analysis
 
 **Sprint:** Northstar Retail Co., Sprint 2
 **Trigger:** Day 4 client pivot — polling method killed, 48-hour switch to webhook push
