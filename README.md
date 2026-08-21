@@ -20,7 +20,7 @@ curl -X POST http://localhost:4000/warehouse/admin/adjust \
 curl http://localhost:4200/stock/SKU-1001                                        # reflects push, no wait
 ```
 
-## File map -> assignment
+ File map -> assignment
 
 | Deliverable | Where |
 |---|---|
@@ -41,10 +41,3 @@ curl http://localhost:4200/stock/SKU-1001                                       
   with no polling delay.
 - `GET /stock/:sku` response shape confirmed identical before and after the
   pivot (see Scope Delta Analysis, "Regression check").
-
-## Honest gap
-Assignment 3 is structurally a peer-review artifact — it needs a real
-teammate's honest read on a real person's behavior under pressure. That's
-provided here as a ready-to-use template rather than fabricated, since
-invented peer feedback wouldn't be a genuine adaptability signal for
-anyone.
