@@ -13,8 +13,14 @@ const express = require('express');
 const cache = require('./cache');
 const webhookReceiver = require('./webhookReceiver');
 
-const PORT = 4200;
-const WAREHOUSE_BASE = 'http://localhost:4000';
+const PORT = process.env.PORT || 4200;
+
+const WAREHOUSE_BASE =
+  process.env.WAREHOUSE_BASE_URL || 'http://localhost:4000';
+
+const WEBHOOK_PUBLIC_URL =
+  process.env.WEBHOOK_PUBLIC_URL ||
+  `http://localhost:${PORT}/webhooks/stock-update`;
 
 const app = express();
 
