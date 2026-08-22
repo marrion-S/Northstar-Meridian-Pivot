@@ -68,7 +68,6 @@ async function seedInitialCache() {
     console.error('[inventory-sync] initial seed failed:', err.message);
   }
 }
-
 app.listen(PORT, '0.0.0.0', async () => {
   console.log(`[inventory-sync] listening on :${PORT}`);
   await seedInitialCache();
